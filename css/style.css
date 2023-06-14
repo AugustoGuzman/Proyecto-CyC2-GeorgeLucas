@@ -55,21 +55,331 @@
 
 #iconanim {overflow: hidden;}
 
-.TieIcon {animation-name: animacionInfinita;
-    animation-duration: 2s;
-    overflow: hidden}
+.TieIcon {transition:1s;
+animation-name:animacionInfinita;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+}
+
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-decoration: none
+    }
+    
+    
+    @import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind:wght@300;400;500;600;700&display=swap');
+    
+    .bodycv {
+        
+        background-color: lightgray; font-family:'Hind', sans-serif;
+    }
+    
+    .header {background-color: rgb(125, 125, 125);
+        display:flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 20px;
+        transition-property: all;
+        transition-duration: 1s;
+        overflow: hidden
+    }
+    
+    .animacion {
+        display:flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        animation-name:animacionFadeIn;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    }
+    
+    .header h2 {font-size: 30px}
+    
+    .header .info1 a {color:black;font-size: 20px;}
+    .header .info1 p {font-size:25px}
+    
+    .foto {width: 50%;
+        margin-top: 30px;
+        transition-duration: 1s;
+        text-align: right;
+        padding-right:20px;
+        
+    }
+    
+    .foto:hover{opacity: 0.5;}
+    
+    .foto img:hover{
+        transform:scale(1.1);
+        border-radius: 20px;
+    }
+    
+    .info1 {width: 50%;
+        margin-top: 30px;
+        
+    }
+    
+    
+    .info1 .para1 {
+        font-weight:700; 
+        color: rgb(173, 173, 173);
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    
+    .info1 a:hover{
+        color:white;
+        
+    }
+    .info1 h1 {font-size: 50px;}
+    
+    .info1 h2 {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    
+    .info1 .para2 {
+        color: rgb(255, 255, 255);
+        margin-top: 10px;
+        
+    }
+    
+    
+    
+    .contenedor{
+        display:flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:space-evenly;
+        transition-property: all;
+        transition-duration: 1s;
+        overflow: hidden;
+        padding-bottom: 15px;
+        
+        
+    }
+    
+    .contenedor p {font-size: 21px; margin-top: 15px;}
+    .contenedor h1 {font-size: 40px;margin-top:15px;}
+    .contenedor h2 {
+        font-size: 30px ; margin-top:15px;}
+    
+    .resumen {width: 96%;
+    text-align: center;
+    background: rgb(185, 173, 173);
+    transition-duration: 1s;
+    padding:20px;
+    padding-top:0;
+    margin:20px
+    }
+    
+    .resumen:hover{
+        transform:scale(1.02);
+        border-radius: 20px;
+    }
+    
+    .estudios {
+        width: 96%;
+        text-align: center;
+        background-color:rgb(159, 159, 159) ;
+        padding: 20px;
+        padding-top:0;
+        margin:20px;
+        transition-duration: 1s;
+       
+    }
+    
+    .estudios:hover{
+        transform:scale(1.02);
+        border-radius: 20px;
+    }
+    
+    .experiencia {
+        width: 48%;
+        text-align: center;
+        border-style: solid;
+        border-radius: 20px;
+        margin-top: 10px;
+        border-color:darkgrey;
+        transition-duration: 1s;
+    }
+    
+    .experiencia:hover{
+        transform:scale(1.02);
+        background-color:bisque;
+        border-color: black;
+        color:slategray
+        
+        
+    }
+    
+    .distinciones{width: 48%;text-align: center;
+        border-style: solid;
+        border-radius: 20px;
+        margin-top: 10px;
+        border-color:darkgrey;
+        transition-duration: 1s;
+     }
+    
+     .distinciones:hover{
+        transform:scale(1.02);
+        background-color:bisque;
+        border-color: black;
+        color:slategray
+        
+    }
+    
+     .productor {
+        width:48%;text-align: center;
+        border-style: solid;
+        border-radius: 20px;
+        margin-top: 10px;
+        border-color:darkgrey;
+        transition-duration: 1s;
+     }
+    
+     .productor:hover{
+        transform:scale(1.02);
+        background-color:bisque;
+        border-color: black;
+        color:slategray
+        
+    }
+    
+     .director {
+        width:48%;text-align: center;
+        border-style: solid;
+        border-radius: 20px;
+        margin-top: 10px;
+        border-color:darkgrey;
+        transition-duration: 1s;
+     }
+    
+     .director:hover{
+        transform:scale(1.02);
+        background-color:bisque;
+        border-color: black;
+        color:slategray
+        
+    }
+    
+    
+     .habilidades {
+        width:48%;text-align: center;
+        border-style: solid;
+        border-radius: 20px;
+        margin-top: 10px;
+        border-color:darkgrey;
+        transition-duration: 1s;
+     }
+    
+     .habilidades:hover{
+        transform:scale(1.02);
+        background-color:bisque;
+        border-color: black;
+        color:slategray
+       
+    }
+    
+     .idiomas {width: 48%;text-align: center;
+        border-style: solid;
+        border-radius: 20px;
+        margin-top: 10px;
+        border-color:darkgrey;
+        transition-duration: 1s;
+    }
+    
+    .idiomas:hover{
+        transform:scale(1.02);
+        background-color:bisque;
+        border-color: black;
+        color:slategray;
+        
+    }
+    
+    
+    .experiencia, .distinciones, .productor, .director, .habilidades, .idiomas {
+        padding:20px;
+        margin:10px;
+        
+    }
+
 
     @keyframes animacionInfinita {
     
         0%{
-            transform:translateX(100px)
+            transform:translatex(-200px)
         }
-    
+        
         50%{
-            transform:translateX(0)
+            transform: translateX(200px)
         }
 
         100%{
-            transform: translateX(100px)
+            transform:translateX(-200px)
         }
+    }
+
+
+    @keyframes animacionFadeIn {
+    
+        0%{
+            transform:translateX(1200px)
+        }
+    
+        100%{
+            transform:translateX(0)
+        }
+    }
+    
+    
+    @media screen and (min-width:0px) and (max-width:990px) {
+       
+    
+        .header {flex-direction: column;
+                justify-content: center;
+        }
+    
+        .animacion {
+            flex-direction: column;
+            justify-content: center;
+    
+        }
+    
+        .foto {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .info1{
+            width: 100%;
+            text-align: center;
+    
+        }
+    
+        .contenedor {
+            
+            justify-content: space-evenly;
+        }
+    
+        .experiencia, .distinciones, .productor, .director, .habilidades, .idiomas {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .footer {
+            flex-direction: column;
+            justify-content: center;
+        }
+    
+            .hecho, .iconos {
+                width:100%;
+                text-align: center;
+            }
+    
     }
