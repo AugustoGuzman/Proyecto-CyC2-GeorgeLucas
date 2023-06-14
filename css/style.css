@@ -3,7 +3,9 @@
 .bg1 {background-color: gray;}
 .bg2 {background-color: rgb(225, 225, 225);}
 
-
+.mainheader{
+    overflow: hidden;
+}
 
 
 .footer {
