@@ -9,7 +9,6 @@
     padding: 20px;
     background-color:dimgray;
     justify-content: space-around;
-    margin-top: 30px;
     color: white;
  }
 
@@ -49,3 +48,25 @@
 .fa-youtube {
     background: gray;
     color: white;}
+
+
+#iconanim {overflow: hidden;}
+
+.TieIcon {animation-name: animacionInfinita;
+    animation-duration: 2s;
+    overflow: hidden}
+
+    @keyframes animacionInfinita {
+    
+        0%{
+            transform:translateX(100px)
+        }
+    
+        50%{
+            transform:translateX(0)
+        }
+
+        100%{
+            transform: translateX(100px)
+        }
+    }
