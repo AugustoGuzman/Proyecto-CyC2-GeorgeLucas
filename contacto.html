@@ -89,19 +89,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
-                    <form>
+                    <form class="needs-validation">
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Nombre y Apellido</label>
-                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tu nombre y apellido">
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tu nombre y apellido" required>
+                            <div class="invalid-feedback">
+                              Por favor escriba su nombre y apellido
+                              </div>
                           </div>
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="tumail@gmail.com">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="tumail@gmail.com" required>
+                        <div class="invalid-feedback">
+                          Por favor escriba su mail
+                        </div>
                       </div>
                       <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label">Dejame un mensaje</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                        <div class="invalid-feedback">
+                          Por favor deje su mensaje
+                        </div>
                       </div>
                       <div class="mb-3">
                         <button type="button" class="btn btn-danger"><b>Enviar</b></button>
