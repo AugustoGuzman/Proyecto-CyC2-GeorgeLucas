@@ -2,6 +2,21 @@
 *{font-family: 'Montserrat',sans-serif;}
 .bg1 {background-color: gray;}
 .bg2 {background-color: rgb(225, 225, 225);}
+@font-face {
+    font-family: "starjedi";
+    src: url("../fonts/starjedi/Starjedi.ttf");
+}
+
+@font-face {
+    font-family: "starjedihol";
+    src: url("../fonts/starjedi/Starjhol.ttf");
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 
 .mainheader{
     overflow: hidden;
@@ -86,7 +101,7 @@ animation-iteration-count: infinite;
         background-color: lightgray; font-family:'Hind', sans-serif;
     }
     
-    .header {background-color: rgb(125, 125, 125);
+    .headercv {background-color: rgb(125, 125, 125);
         display:flex;
         width: 100%;
         flex-direction: row;
